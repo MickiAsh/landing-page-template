@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+
+/* Background*/
+.responsive-background {
+    background-image: url('./background1920x1080.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 295vh;
+    margin-top: -21px;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    position: relative; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.h1r {
+    position: relative;
+    top: 50px;
+    z-index: 2;
+    margin-top: 35px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+   /* overflow-y: scroll; */
+    
+}
+body {
+    overflow-x: hidden;
+    height: 295vh;
+}
+
+
+/* Carousel  */
+.carousel {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 0 auto; 
+    position: relative;
+    top: 75px;
+    z-index: 2;
+   
+}
+
+.carousel-track {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%; 
+    transition: transform 1s ease-in-out, left 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0; 
+    /*  z-index: 3;
+    /* border: 2px solid red; */
+}
+
+.carousel-slide.active {
+    left: 0;
+    transform: translateX(0);
+    opacity: 1; 
+   /* z-index: 5;  */
+}
+
+.carousel-slide.prev {
+    left: -100%; 
+    transform: translateX(-100%);
+   opacity: 0;
+   /* z-index: 3;  */
+}
+
+.carousel-slide.next {
+    left: 100%;
+    transform: translateX(100%);
+   opacity: 0; 
+ /*   z-index: 4;  */
+}
+
+
+.button-div {
+    position: relative;
+    top: 450px;
+}
+
+.d-b {
+    border: none;
+    padding: 10px 25px;
+    font-family: "Heebo", sans-serif;
+    border-radius: 15px;
+    background-color: rgb(173, 101, 255);
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.d-b:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(237, 99, 255, 0.63);
+    font-weight: 600;
+}
+
+.logo-div {
+    position: relative;
+    display: block;
+    top: 510px;
+    overflow-y: hidden;
+   
+} 
+
+
+.pay-div {
+    position: relative;
+    top: 550px;
+}
+
+
+
+.text1 {
+    position: relative;
+    top: 570px;
+}
+
+.content1 {
+    position: relative;
+    top: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.content1 p {
+    margin-top: 45px;
+}
+
+.content2 {
+    position: relative;
+    top: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.content2 p {
+    margin-top: 45px;
+}
+
+.content3 {
+    position: relative;
+    top: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.content3 p {
+    margin-top: 45px;
+}
+
+.form-div {
+    position: relative;
+    top: 780px;
+}
+
+
+.form1 {
+    color: white;
+    background-image: url(/PNGS/glassback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-size:contain;
+
+
+}
+
+#form2 {
+    position: relative;
+    top: 80px;
+}
+
+.form1 input {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #3333;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.form-button  {
+    border: none;
+    padding: 2px 25px;
+    font-family: "Heebo", sans-serif;
+    border-radius: 15px;
+    background-color: rgb(173, 101, 255);
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+  
+}
+
+.form-button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(237, 99, 255, 0.63);
+    font-weight: 600;
+}
+
+.button3 {
+    position: relative;
+    top: 760px;
+}
+
+#button-3 {
+    background-image: url(/PNGS/arrowup.png);
+    background-position: center;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 36px 45px;
+    background-color: none;
+    padding: 25px 25px;
+    background-color: rgba(245, 222, 179, 0);
+    cursor: pointer;
+
+}
+
+
+#button-3:hover {
+    background-image: url(/PNGS/arrowuphover.png);
+}
+
+
+
+.content5 {
+    position: relative;
+    top: 910px;
+    font-weight: 100;
+}
+/* errors to fix !!!! - 
+1. when screen is under height 550px cant scroll to see the content
+   (caused because of line 15 but needed for preventing 2 scroll bar error)
+   way to fix : try add some media screen 
+
