@@ -252,5 +252,5 @@ body {
 /* errors to fix !!!! - 
 1. when screen is under height 550px cant scroll to see the content
    (caused because of line 15 but needed for preventing 2 scroll bar error)
-   way to fix : try add some media screen 
+  
 
