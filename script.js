@@ -22,7 +22,7 @@ function autoSlide() {
 // Initialize the first slide
 showSlide(currentIndex);
 
-// Automatically slide every 3 seconds (
+// Automatically slide every 3 seconds 
 setInterval(autoSlide, 3000);
 
 
