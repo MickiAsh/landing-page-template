@@ -22,12 +22,12 @@ function autoSlide() {
 // Initialize the first slide
 showSlide(currentIndex);
 
-// Automatically slide every 3 seconds (adjust as needed)
+// Automatically slide every 3 seconds (
 setInterval(autoSlide, 3000);
 
 
 
-//system to scroll to a spesific elment by clicking a button created by michael ashkenazi
+//scroll to a spesific elment by clicking a button
 
 const button1 = document.getElementById('button1');
 const form1 = document.getElementById('form2');
